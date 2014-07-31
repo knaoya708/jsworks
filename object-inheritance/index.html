@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>オブジェクトの継承</title>
+	<script>
+	var Animal = function(){}
+	Animal.prototype = {
+		walk : function(){
+			window.alert("コトコト")
+		}
+	};
+
+	//Animalオブジェクトを継承してhamsterオブジェクト
+	var Hamster = function(){};
+	Hamster.prototype = new Animal();
+
+	Hamster.prototype.gnaw = function(){
+		window.alert("ガシガシ...");
+	};
+
+	var ham = new Hamster();
+	ham.walk(); //「トコトコ」[A]
+	ham.gnaw(); // 「ガジガジ...」
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
