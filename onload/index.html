@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>onLoadイベント</title>
+</head>
+<script>
+	/* onLoadイベントが発生したときに行う処理を記述 */
+	function init(){
+		alert("ページが読み込まれました");
+	}
+</script>
+<body onload="init()">
+<p>
+	ページ読み込み完了時に、onLoadイベントが発生します。</br>
+</p>
+<p>
+	<input type="button" value="リロード(更新)する" onclick="window.location.reload()"/>
+</p>
+	
+</body>
+</html>
