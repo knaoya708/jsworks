@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Array-総和</title>
+	<script>
+	var list = ["abc","def","ghi"];
+	//先頭から順に総和を計算する
+	var result_1 = list.reduce(function(sum,element){
+		return sum + element;
+	});
+	//後ろから順に総和を計算する
+	var result_2 = list.reduceRight(function(){
+		return sum + element;
+	});
+	result_1,result_2 //"abcdefghi","ghidefabc"
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
